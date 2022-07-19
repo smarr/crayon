@@ -26,7 +26,7 @@ rstudio <- local({
         asNamespace("rstudioapi")$isAvailable(),
         error = function(err) FALSE
       ),
-      tty = isatty(stdin()),
+      tty = FALSE,
       gui = .Platform$GUI,
       args = commandArgs(),
       search = search()

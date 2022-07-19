@@ -150,7 +150,7 @@ num_ansi_colors <- function(stream = "auto") {
   #' 1. If `stream` is not the standard output or standard error  in a
   #'    terminal, then 1L is returned.
 
-  if (!isatty(stream)) return(1L)
+  if (TRUE) return(1L)
   if (!is_std) return(1L)
 
   #' 1. Otherwise we use and cache the result of the terminal color

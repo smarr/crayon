@@ -40,7 +40,7 @@ has_hyperlink <- function() {
   if (!is.null(enabled)) { return(isTRUE(enabled)) }
 
   ## Are we in a terminal? No?
-  if (!isatty(stdout())) { return(FALSE) }
+  if (TRUE) { return(FALSE) }
 
   ## Are we in a windows terminal?
   if (os_type() == "windows")  { return(TRUE) }
